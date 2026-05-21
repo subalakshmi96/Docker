@@ -1,0 +1,50 @@
+Docker Compose manages multi-container applications defined in YAML configuration files.
+
+Start all services defined in the Docker Compose file
+#docker compose up
+
+Start services in detached background mode
+#docker compose up -d
+
+Rebuild images before starting services
+#docker compose up --build
+
+Stop and remove containers and networks
+#docker compose down
+
+Stop services and also remove volumes
+#docker compose down -v
+
+List running Docker Compose services
+#docker compose ps
+
+View logs for all services
+#docker compose logs
+
+Follow logs of a specific service in real time
+#docker compose logs -f <service_name>
+
+Open a bash shell inside a running service container
+#docker compose exec <service_name> bash
+
+Run a one time command in a service
+#docker compose run <service_name> <command>
+
+Build or rebuild service images
+#docker compose build
+
+Pull images for all services
+#docker compose pull
+
+Restart all services
+#docker compose restart
+
+Stop services without removing them
+#docker compose stop
+
+Validate and display the merged Compose configuration
+#docker compose config
+
+Scale a service to multiple instances
+#docker compose scale <service_name>=<number_of_instances>
+

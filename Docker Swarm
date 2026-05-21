@@ -1,0 +1,41 @@
+Docker Swarm is Docker's native container orchestration and clustering tool
+
+
+Initialize a Docker Swarm on the current node
+#docker swarm init
+
+Join a swarm as a worker node
+#docker swarm join --token <token> <manager_host>
+
+Leave the Docker Swarm
+#docker swarm leave
+
+List all nodes in the swarm
+#docker node ls
+
+Create a new service in the swarm
+#docker service create --name <service_name> <image_name>
+
+List all services running in the swarm
+#docker service ls
+
+Scale a service to multiple replicas
+#docker service scale <service_name>=<replica_count>
+
+List tasks of a service
+#docker service ps <service_name>
+
+Update a running service
+#docker service update <service_name>
+
+Remove a service from the swarm
+#docker service rm <service_name>
+
+Deploy a stack using a Docker Compose file
+#docker stack deploy -c <compose_file>.yml <stack_name>
+
+List all deployed stacks
+#docker stack ls
+
+Remove a deployed stack
+#docker stack rm <stack_name>

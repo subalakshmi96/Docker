@@ -1,0 +1,35 @@
+System-wide Docker management, maintenance, and Docker Hub/registry interactions.
+
+Show Docker disk usage
+#docker system df
+
+Remove all unused Docker resources
+#docker system prune
+
+Remove all unused Docker resources including images
+#docker system prune -a
+
+Display system wide Docker information
+#docker system info
+
+Stream real time Docker events
+#docker system events
+
+Show Docker daemon information
+#docker info
+
+Show Docker client and server versions
+#docker version
+
+Log in to Docker Hub
+#docker login
+
+Log out from Docker Hub
+#docker logout
+
+List all Docker contexts
+#docker context ls
+
+Switch to a different Docker context
+#docker context use <context_name>
+

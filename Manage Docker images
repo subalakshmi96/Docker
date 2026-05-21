@@ -1,0 +1,64 @@
+Manage Docker images — the blueprints used to create containers. Images are stored locally or in a 
+registry
+
+
+List all local Docker images
+#docker images
+
+List all images including intermediate layers
+#docker images -a
+
+Download an image from Docker Hub
+#docker pull <image_name>
+
+Pull a specific tag of an image
+#docker pull <image_name>:<tag>
+
+Push an image to a registry
+#docker push <image_name>
+
+Build an image from a Dockerfile in the current directory
+#docker build -t <image_name>:<tag> .
+
+Build an image using a specific Dockerfile
+#docker build -f <Dockerfile_name> .
+
+Build an image without using cache
+#docker build --no-cache .
+
+Pass build arguments to the Dockerfile
+#docker build --build-arg <KEY>=<VALUE> .
+
+Remove a Docker image
+#docker rmi <image_name>
+
+Forcefully remove a Docker image
+#docker rmi -f <image_name>
+
+Remove all dangling unused images
+#docker image prune
+
+Remove all unused Docker images
+#docker image prune -a
+
+Tag an image with a new name or tag
+#docker tag <source_image>:<tag> <destination_image>:<tag>
+
+Show layer history of an image
+#docker history <image_name>
+
+View detailed metadata of an image
+#docker inspect <image_name>
+
+Save a Docker image as a tar archive
+#docker save -o <file_name>.tar <image_name>
+
+Load a Docker image from a tar archive
+#docker load -i <file_name>.tar
+
+Import a filesystem tarball as a Docker image
+#docker import <file_name>.tar <image_name>
+
+Search Docker Hub for images
+#docker search <search_term>
+
